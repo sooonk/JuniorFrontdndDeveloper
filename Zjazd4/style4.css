@@ -1,0 +1,148 @@
+body{
+    box-sizing: border-box;
+}
+
+.flex-header{
+    display: flex;
+    background-color: rgb(48, 90, 228);
+    color: white;
+    line-height: 50px;
+    height: auto;
+    align-items: center;
+    
+}
+
+.flex-item-data{
+    margin: 20px;
+    width: 60%;
+    text-align: center;
+    font-size: 20px;
+    
+    
+}
+.flexitemlogowanie{
+    display: flex;
+    margin: 20px;
+    width: 39%;
+    font-size: 20px;
+
+    
+}
+.signup{
+    width: 20%;
+    text-align: right;
+    margin: 20px;
+    flex-wrap: nowrap;
+
+    
+}
+.login{
+    width: 19%;
+    text-align: left;
+    margin: 20px;
+}
+
+
+.banner{
+    display: flex;
+    text-align: center;    
+    background-color: rgb(101, 164, 235);
+    padding: 20px;
+
+
+
+}
+.subscribe{
+    width: 40%;
+    text-align: center; 
+    font-size: 20px;
+    line-height: 80px;
+    text-align: right;
+    padding: 20px;
+
+}
+
+.logo{
+    width: 20%;
+    text-align: center; 
+    font-size: 32px;
+    line-height: 80px;
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+.buttons{
+    display: flex;
+    width: 39%;
+    margin: 20px;
+    justify-content: left;
+    line-height: 50px;
+    padding: 20px;
+
+}
+img{
+    margin: 10px;
+}
+
+.flexbox-container1{
+    display: flex;
+    background: whitesmoke;
+    font-size: 40px;
+    flex-wrap: wrap;
+    margin: 0 auto;  
+    height: auto;
+    justify-content: center;     
+    flex-direction: row;
+
+}
+
+
+
+.flexbox-item1, .flexbox-item2, .flexbox-item3, .flexbox-item4, .flexbox-item5{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 150px;
+    align-content: center;
+    font-weight: bold;
+    
+}
+break{
+    flex-basis: 100%;
+    width: 0px; 
+    height: 0px; 
+    overflow: hidden;
+  }
+
+.flexbox-item1{
+   
+    padding: 20px;
+    background: rgb(250, 173, 29);
+    
+}
+.flexbox-item2{
+    
+    padding: 20px;
+    background: rgb(216, 35, 35);
+   
+}
+.flexbox-item3{
+    
+    padding: 20px;
+    background: rgb(51, 157, 206);
+    
+}
+    
+.flexbox-item4{
+    
+    padding: 20px;
+    background: rgb(126, 255, 114);
+    
+}
+.flexbox-item5{
+    
+    padding: 20px;
+    background: rgb(247, 110, 240);
+    
+}
