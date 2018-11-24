@@ -1,0 +1,56 @@
+.header{
+    background-color: rgb(48, 90, 228);
+    color: white;
+    line-height: 50px;
+    height: auto;
+    align-items: center;
+}
+
+.banner{
+    text-align: center;    
+    background-color: rgb(101, 164, 235);
+    padding: 20px;
+}
+
+
+.item1, .item2, .item3, .item4, .item5{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 150px;
+    align-content: center;
+    font-weight: bold;
+}
+
+.flexbox-item1{
+   
+    padding: 20px;
+    background: rgb(250, 173, 29);
+    
+}
+.flexbox-item2{
+    
+    padding: 20px;
+    background: rgb(216, 35, 35);
+   
+}
+.flexbox-item3{
+    
+    padding: 20px;
+    background: rgb(51, 157, 206);
+    
+}
+    
+.flexbox-item4{
+    
+    padding: 20px;
+    background: rgb(126, 255, 114);
+    
+    
+}
+.flexbox-item5{
+    
+    padding: 20px;
+    background: rgb(247, 110, 240);
+    
+}
