@@ -3,12 +3,10 @@
     background: blue;
     font-size: 40px;
     flex-wrap: wrap;
-    
-
+    margin: 10px;      
 }
 
 .flexbox-item{
-
     margin: 20px;
     padding: 20px;
     background: white;
@@ -17,7 +15,6 @@
     text-align: center;
     line-height: 100px;
     flex-wrap: wrap;
-
 }
 
 .flexbox-container-rowreverse{
@@ -27,8 +24,6 @@
     font-size: 40px;
     margin: 10px;
     flex-wrap: wrap-reverse;
-    
-
 }
 
 .flexbox-container-column{
@@ -45,5 +40,47 @@
     background: blue;
     font-size: 40px;
     margin: 10px;
-
+}
+.flexbox-nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+    background: blue;
+    font-size: 40px;
+    margin: 10px;
+}
+.flexbox-container-none{
+    display: flex;
+    flex-wrap: nowrap;
+    background: blue;
+    font-size: 40px;
+    margin: 10px;
+    height: 600px;
+    align-items: st;
+}
+.flexbox-container-flexstart{
+    display: flex;
+    flex-wrap: nowrap;
+    background: blue;
+    font-size: 40px;
+    margin: 10px;
+    height: 600px;
+    align-items: flex-start;
+}
+.flexbox-container-flexend{
+    display: flex;
+    flex-wrap: nowrap;
+    background: blue;
+    font-size: 40px;
+    margin: 10px;
+    height: 600px;
+    align-items: flex-end;
+}
+.flexbox-container-center{
+    display: flex;
+    flex-wrap: nowrap;
+    background: blue;
+    font-size: 40px;
+    margin: 10px;
+    height: 600px;
+    align-items: center;
 }
