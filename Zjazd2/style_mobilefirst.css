@@ -1,0 +1,98 @@
+.container {
+    width: 100%;    
+    
+}
+    @media only screen and (min-width: 768px) {
+        .container {
+        width: 100%;
+    }
+   
+}
+    @media only screen and (min-width: 1240px) {
+        .container {
+            width: 1150px;
+            margin: 0 auto;
+    }
+       
+    }
+        
+
+
+.element{
+    color: white;
+    background: gray;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    height: 100px;
+    line-height: 100px;
+}
+
+.baner{
+    height: 200px;
+    line-height: 200px;
+}
+
+.image{
+    display: inline-block;
+    width: 100%;
+    line-height: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+    .image{
+        display: inline-block;
+        width: 49%;
+        line-height: 200px;
+    }
+}    
+@media only screen and (min-width: 1240px) {
+    .image{
+        display: inline-block;
+        width: 200px;
+        line-height: 200px;
+    }
+}
+
+
+.textcolumn{
+    display: inline-block;
+    width: 100%;
+    margin-left: 0;
+    vertical-align: top;
+    line-height: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .textcolumn{
+        display: inline-block;
+        width: 50%;
+        margin-left: 0;
+        vertical-align: top;
+        line-height: 40px;
+    }
+}
+     
+@media only screen and (min-width: 1240px) {
+    .textcolumn{
+        
+        display: inline-block;
+        width: 930px;
+        margin-left: 12px;
+        vertical-align: top;
+        line-height: 40px;
+    }
+}
+
+
+
+.footer{
+    height: 50px;
+    line-height: 50px;
+}
+
+

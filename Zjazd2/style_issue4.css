@@ -1,0 +1,130 @@
+html{
+    font-size: 15px;    
+}
+
+
+.container {
+    width: 100%;    
+    
+}
+    @media only screen and (min-width: 51.2rem) {
+        .container {
+        width: 100%;
+    }
+   
+}
+    @media only screen and (min-width: 82.66rem) {
+        .container {
+            width: 76.66rem;
+            margin: 0 auto;
+    }
+       
+    }
+        
+
+
+.element{
+    color: white;
+    background: gray;
+    margin-bottom: 1rem;
+    padding: 0.66rem;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    height: 6.66rem;
+    line-height: 6.66rem;
+}
+
+.baner{
+    height: 50vh;
+    line-height: 13.33rem;
+    background-image: url(https://vignette.wikia.nocookie.net/southpark/images/f/f1/The-boys-0.png/revision/latest?cb=20170802044422);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media only screen and (min-width: 51.2rem) {
+    .baner{
+    background-image: url('http://digitalspyuk.cdnds.net/16/37/980x490/landscape-801goodtimeswithweapons2.jpg');
+    background-size: 70%
+    }
+} 
+@media only screen and (min-width: 82.66rem) {
+    .baner{
+    background-image: url('https://cdn1.thr.com/sites/default/files/imagecache/scale_crop_768_433/2016/07/south_park_still_h_2016.jpg');
+    background-size: 60%
+    }
+} 
+
+
+
+.image{
+    display: inline-block;
+    width: 100%;
+    line-height: 13.33rem;
+}
+
+@media only screen and (min-width: 51.2rem) {
+    .image{
+        display: inline-block;
+        width: 49%;
+        line-height: 13.33rem;
+    }
+}    
+@media only screen and (min-width: 82.66rem) {
+    .image{
+        display: inline-block;
+        width: 13.33rem;
+        line-height: 13.33rem;
+    }
+}
+
+
+.textcolumn{
+    display: inline-block;
+    width: 100%;
+    margin-left: 0;
+    vertical-align: top;
+    line-height: 2.66rem;
+}
+
+@media only screen and (min-width: 51.2rem) {
+    .textcolumn{
+        display: inline-block;
+        width: 50%;
+        margin-left: 0;
+        vertical-align: top;
+        line-height: 42.66rem;
+    }
+}
+     
+@media only screen and (min-width: 82.66rem) {
+    .textcolumn{
+        
+        display: inline-block;
+        width: 62rem;
+        margin-left: 0.8rem;
+        vertical-align: top;
+        line-height: 0.8rem;
+    }
+}
+
+
+
+.footer{
+    height: 3.33rem;
+    line-height: 3.33rem;
+}
+
+.galeria img{
+    display: inline-block;
+    width: 33%;
+}
+@media only screen and (max-width: 51.2rem) {
+    .galeria img{
+        width: 100%;
+    }
+}
