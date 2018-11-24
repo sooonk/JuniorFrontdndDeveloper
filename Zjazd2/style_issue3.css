@@ -1,0 +1,125 @@
+.container {
+    width: 100%;    
+    
+}
+    @media only screen and (min-width: 768px) {
+        .container {
+        width: 100%;
+    }
+   
+}
+    @media only screen and (min-width: 1240px) {
+        .container {
+            width: 1150px;
+            margin: 0 auto;
+    }
+       
+    }
+        
+
+
+.element{
+    color: white;
+    background: gray;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    height: 100px;
+    line-height: 100px;
+}
+
+.baner{
+    height: 200px;
+    line-height: 200px;
+    background-image: url(https://vignette.wikia.nocookie.net/southpark/images/f/f1/The-boys-0.png/revision/latest?cb=20170802044422);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .baner{
+    background-image: url('http://digitalspyuk.cdnds.net/16/37/980x490/landscape-801goodtimeswithweapons2.jpg');
+    background-size: 70%
+    }
+} 
+@media only screen and (min-width: 1240px) {
+    .baner{
+    background-image: url('https://cdn1.thr.com/sites/default/files/imagecache/scale_crop_768_433/2016/07/south_park_still_h_2016.jpg');
+    background-size: 60%
+    }
+} 
+
+
+
+.image{
+    display: inline-block;
+    width: 100%;
+    line-height: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+    .image{
+        display: inline-block;
+        width: 49%;
+        line-height: 200px;
+    }
+}    
+@media only screen and (min-width: 1240px) {
+    .image{
+        display: inline-block;
+        width: 200px;
+        line-height: 200px;
+    }
+}
+
+
+.textcolumn{
+    display: inline-block;
+    width: 100%;
+    margin-left: 0;
+    vertical-align: top;
+    line-height: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .textcolumn{
+        display: inline-block;
+        width: 50%;
+        margin-left: 0;
+        vertical-align: top;
+        line-height: 40px;
+    }
+}
+     
+@media only screen and (min-width: 1240px) {
+    .textcolumn{
+        
+        display: inline-block;
+        width: 930px;
+        margin-left: 12px;
+        vertical-align: top;
+        line-height: 40px;
+    }
+}
+
+
+
+.footer{
+    height: 50px;
+    line-height: 50px;
+}
+
+.galeria img{
+    display: inline-block;
+    width: 33%;
+}
+@media only screen and (max-width: 768px) {
+    .galeria img{
+        width: 100%;
+    }
+}
