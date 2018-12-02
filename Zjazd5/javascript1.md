@@ -30,6 +30,12 @@ console.table([1,2,3,4]); - pokazuje tabelę
 
 Przydaje się, aby wyłapać dany console
 
-## 
+## Boolean
+
+True/false
+
+
+
+
 
 

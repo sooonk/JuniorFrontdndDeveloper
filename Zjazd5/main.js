@@ -87,7 +87,7 @@ console.log( (a != b) && (a >= b) && (b <= c));
 
 console.log( (!(a != b) || (a > b) || !(a > c)) || (a <= c)) ;
 */
-
+/*
 let a = 10;
 let b = 15;
 
@@ -101,7 +101,16 @@ if ( a === 10 && b === 10){
 
 //ternary shape
 console.log("Stwierdzenie A jest mniejsze od B to " + (a > b ? true : false));
+*/
 
+let date = '2018';
+
+switch (date){
+    case '2018': console.log("Mamy 2018 rok");
+    case '2019': console.log("Data jest w przyszłości"); break
+    default: console.log("Poza zakresem kalendarza");
+
+}
 
 
 
