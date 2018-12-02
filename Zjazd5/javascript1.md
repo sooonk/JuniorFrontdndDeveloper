@@ -34,6 +34,23 @@ Przydaje się, aby wyłapać dany console
 
 True/false
 
+## Arrays
+
+Deep copy
+Osobne kopie
+
+Shallow copy
+Jedna kopia do pracy
+
+Push - dodanie elementu na koniec tablicy
+Pop - wyrzucenie ostatniego elementu 
+Shift - wyrzucenie pierwszego elementu
+Unshift - dodanie elementu na początek tablicy
+Slice - zwrócenie części tablicy - (start, end) - element end się nie wlicza
+Umożliwia stworzenie shallow copy.
+
+indexOf - wyrzuca index danej wartości
+
 
 
 
