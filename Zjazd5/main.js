@@ -102,7 +102,7 @@ if ( a === 10 && b === 10){
 //ternary shape
 console.log("Stwierdzenie A jest mniejsze od B to " + (a > b ? true : false));
 */
-
+/*
 let date = '2018';
 
 switch (date){
@@ -111,6 +111,85 @@ switch (date){
     default: console.log("Poza zakresem kalendarza");
 
 }
+*/
+
+//Array
+/*
+let names = ["Ania", "Ewelina", "Karina", "Elina"];
+console.log(names);
+
+names.push("Andromeda", "Natasha");
+console.log(names);
+
+let indexOfEwelina = names.indexOf("Ewelina");
+console.log(indexOfEwelina);
+newIndexOfEwelina = indexOfEwelina + 2;
+console.log(newIndexOfEwelina);
+
+
+let newArray = (names.slice(newIndexOfEwelina, names.indexOf("Natasha")));
+console.log(newArray);
+
+newArray.unshift("Shepard");
+console.log(newArray);
+
+
+
+if(names[3] == newArray[1]){
+    console.log(true);
+}else{
+    console.log(false);
+}*/
+
+//For loops
+
+let start = 1;
+let end = 35;
+let array = [];
+
+for (let i = 0; i <= 35; i++){
+
+    array.push(i); 
+
+}
+console.log(array);
+
+for (let i = 0; i <= array.length; i++ ){
+    if (i <= 15){
+    
+    //console.log(i, "First if");
+    
+    }
+   
+    if (i >= 15 && i <= 25){
+
+        console.log("continue");
+        continue;
+    }
+
+    if (i >= 25 && i <= 30){
+
+        console.log('second if')
+        let result = i % 2;
+
+
+        if (result == 0)
+        {
+            console.log('third if');
+            console.log(i, result); 
+        }
+        
+    }
+
+    if (i === 31)
+    {
+        break;
+    }
+
+    console.warn('warn', i);
+}
+
+
 
 
 
