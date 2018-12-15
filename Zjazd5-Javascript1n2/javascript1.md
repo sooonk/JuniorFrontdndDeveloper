@@ -130,5 +130,26 @@ np. 'asd'.slice(1,2) //s
 np. 'asd'.substring(2,-1) // as
 
 
+## Functions and scopes
 
+function changeName(name){
+    return name + 'asd';
+}
+name to argument, changeName nazwa funkcji
+
+return zamyka funkcję
+
+Deklaracje funkcji
+
+- let action = function(){}; // anonymous nie polecany sposób
+- let action = function someAction(){}; // named function
+- let action = () => {}; // arrow function
+- function someAction(){}; // niezależne funkcje
+
+### Wywołanie funkcji
+
+someFunctionCall(); // wywołanie luźniej funkcji
+
+let action = function someAction(){};
+action(); // wywołanie funkcji
 
