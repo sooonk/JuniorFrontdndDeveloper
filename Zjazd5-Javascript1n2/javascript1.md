@@ -1,4 +1,4 @@
-#JAVASCRIPT
+# JAVASCRIPT
 
 Sprawdzić:
 Brandon Eich - twórcę JS.
@@ -51,7 +51,7 @@ Umożliwia stworzenie shallow copy.
 
 indexOf - wyrzuca index danej wartości
 
-##Objects
+## Objects
 
 Obiekt łączy pewne wartości i akcje.
 
@@ -93,7 +93,7 @@ Dopisywanie danych do obiektów:
 - cat['color'] = "Red";
 - cat.tailColor = 'Red'; - w każdej chwili możemy dorzucić dodatkowe własności, ale trzeba od razu ją zdefiniować i dodać wartość
 
-###Metody
+### Metody
 
 Gdy chcemy odwołać się do metody na samym końcu musimy dodać nawiasy!!!
 
@@ -101,8 +101,33 @@ Gdy chcemy odwołać się do metody na samym końcu musimy dodać nawiasy!!!
 - cat['meow']();
 
 
+### String object
+
+let a = 'a';
+let b = 'a';
+
+a === b //true
 
 
+let a1 = new String('a');
+let b1 = new String('a');
+
+a1 === b1 //false
+
+Ważne!!!
+W takim przypadku a1 nie jest równe b1, ponieważ new generuje nowy obiekt, o innych referencjach.
+
+Metody string object
+
+.indexOf(arg) - zwraca index, na którym wartość, której poszukujemy jest spotkana po raz pierwszy
+
+.length - zwraca długość stringa
+
+.slice(start, stop) - wycina część stringa
+np. 'asd'.slice(1,2) //s
+
+.substring(start, stop)
+np. 'asd'.substring(2,-1) // as
 
 
 
