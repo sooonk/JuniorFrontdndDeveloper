@@ -53,13 +53,54 @@ indexOf - wyrzuca index danej wartości
 
 ##Objects
 
-Objekt łączy pewne wartości i akcje.
+Obiekt łączy pewne wartości i akcje.
 
 let cat = {
     size: "average",
     color: "black",
-    name: "Kitty"
+    name: "Kitty",
+    favouriteThings:{
+        toys: ["Mouse", "Big Mouse"],
+        meals: ["Whiskas"]
+    }
 };
+
+W obiektach można umieszczać nastęne obiekty, tablice itp.
+
+Oprócz własności mamy rówinież metody w obiektach.
+
+let cat = {
+    ...,
+    meow: function(){
+        console.log("I am a cat!")
+    }
+};
+
+Odczytywanie wartości obiektów:
+
+- poprzez kropkę: cat.color;
+- poprzez klamry: cat['color'];
+
+
+W drugim sposobie bardzo ważne jest, aby poprawnie wpisać wartość.
+Stosowany jest on w przypadkach, gdy nie możemy się bezpośrednio odwołać do wartości, np. cat['@type'] - do @ nie można się odwołać, bo JS wyrzuci błąd.
+
+przykład: cat.favouriteThings['toys'][1] - odwołujemy się do pierwszego elementu tablicy toys - wchodzimy w kolejne zagnieżdżenia obiektu
+
+Dopisywanie danych do obiektów:
+
+- cat.color = "Red";
+- cat['color'] = "Red";
+- cat.tailColor = 'Red'; - w każdej chwili możemy dorzucić dodatkowe własności, ale trzeba od razu ją zdefiniować i dodać wartość
+
+###Metody
+
+Gdy chcemy odwołać się do metody na samym końcu musimy dodać nawiasy!!!
+
+- cat.meow();
+- cat['meow']();
+
+
 
 
 
