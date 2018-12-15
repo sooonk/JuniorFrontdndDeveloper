@@ -51,6 +51,16 @@ Umożliwia stworzenie shallow copy.
 
 indexOf - wyrzuca index danej wartości
 
+##Objects
+
+Objekt łączy pewne wartości i akcje.
+
+let cat = {
+    size: "average",
+    color: "black",
+    name: "Kitty"
+};
+
 
 
 
