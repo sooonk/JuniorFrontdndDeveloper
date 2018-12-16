@@ -23,9 +23,9 @@ Obecnie w branży obowiązuje camelCase - nazywanie zmiennej z zaznaczaniem nowe
 
 ## Console objects
 
-console.log - niebieski objekt
-console.warn - żółty objekt 
-console.error - czerwony objekt
+console.log - niebieski obiekt
+console.warn - żółty obiekt 
+console.error - czerwony obiekt
 console.table([1,2,3,4]); - pokazuje tabelę
 
 Przydaje się, aby wyłapać dany console
@@ -148,7 +148,7 @@ Deklaracje funkcji
 
 ### Wywołanie funkcji
 
-someFunctionCall(); // wywołanie luźniej funkcji
+someFunctionCall(); // wywołanie luźnej funkcji
 
 let action = function someAction(){};
 action(); // wywołanie funkcji
