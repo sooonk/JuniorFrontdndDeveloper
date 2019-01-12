@@ -31,7 +31,7 @@
             position: absolute;
         }
         .tarcza {
-            position: absolute;
+            position: relative;
             height: 500px;
             width: 300px;
             background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Target-human_silhouette.png/200px-Target-human_silhouette.png);
@@ -39,6 +39,7 @@
             align-content: center;
             top: 25%;
             left: 40%;
+            
         }
     </style>
     
@@ -68,11 +69,11 @@
             setTimeout(() => { audio.pause(); audio.currentTime = 0 }, 300);
         })
         document.addEventListener('click', function(event){
-            if (event.y >= 240 && event.y <= 320 && event.x >= 500 && event.x <= 600) {
+            if (event.y >= 220 && event.y <= 320 && event.x >= 500 && event.x <= 600) {
                 
                 document.querySelector('.tarcza').remove();
                 
-                var iTimer = window.setTimeout(function(){alert("Headshot, congrats!");}, 300);
+                var iTimer = window.setTimeout(function(){alert("Headshot, congrats!");}, 100);
                               
             }
         })

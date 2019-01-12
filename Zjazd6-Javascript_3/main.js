@@ -1,6 +1,6 @@
 //Task 1
-
 /*
+
 let hero = {
     strength: +Number(Math.random()*100).toPrecision(2),
     knowledge: "Math",
@@ -35,10 +35,9 @@ else{
 
 }
 */
-
 //Task 2
 
-/*
+
 let str1 = new String("STRElanger THinevgsen");
 let str2 = new String("STRElanger THinevgsen");
 let str3 = str2;
@@ -54,11 +53,11 @@ if (str2 === str3) {
     let str4 = str2.slice(3,5) + str2.slice(15,17) + str2.slice(19,21);     
     console.log(`I am ${str4}`);
     console.log('I am ' + str4);       
-}*/
+}
 
 //Task 3a
 
-let groundZerg = {
+/*let groundZerg = {
     power: 10,
     health: 10,
     armor: 10,
@@ -105,7 +104,7 @@ console.log(groundZerg);
 evolutionPool(flyingZerg,evolutionMethod1);
 console.log(flyingZerg);
 
-
+*/
 
 
 
