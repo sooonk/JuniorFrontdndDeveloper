@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>JS DOM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
     
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div>Hello World!</div>
     
+    <script>
+        var nodes = document.getElementsByTagName('div');
+        console.log(nodes);
+        debugger;
+        document.body.appendChild(document.createElement('div'));
+        console.log(nodes);
     
-    <script src="main.js"></script>
+    </script>
 </body>
 </html>
