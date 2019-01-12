@@ -8,6 +8,7 @@
     
 </head>
 <body>
+    <div>Hej, Sonia z tej strony!</div>
     <script>
         let list = document.createElement('ul');
         list.innerText = 'Lista:'
@@ -35,8 +36,17 @@
 
         list.replaceChild(li4, li3);
 
+        function replaceTagName(element, newTagName) {
 
-        
+            let newElement = document.createElement(newTagName);
+            newElement.innerHTML = element.innerHTML;
+
+            element.parentNode.replaceChild(newElement, element);    
+        }
+        replaceTagName(list, 'ol');
+
+
+       
 
     </script>
     
