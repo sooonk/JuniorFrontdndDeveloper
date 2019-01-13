@@ -30,8 +30,15 @@
             }
         
     })
+        let firstName = fullName.map(fullName => fullName.split(' ')[0])
+            
+        console.log(firstName); 
 
-    
+        let sum = fullName.reduce(function(result, name){
+            return result = name.length
+        }
+            ,0);
+        console.log(sum);
     
     </script>
  
