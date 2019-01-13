@@ -26,11 +26,13 @@
 
     array.shift();
     console.log('Array content: ',array);
-    
 
     array.forEach(function(hero, index){
         console.log(hero, index)
     })
+
+
+
 
     let heroes = ['Batman', 'Robin', 'Superman'];
     let modifiedHeroes = heroes.map(function(hero){
@@ -38,6 +40,9 @@
         return 'Hero - ' + hero;
     })
     console.log(modifiedHeroes);
+
+
+
 
     let numbers = [1,2,3,4,5,6,7,8,9,10];
 
@@ -48,6 +53,10 @@
     let num2 = numbers.reduce(function(result, number){
         return result -= number;},100);
     console.log(num2);
+    
+
+    
+
 
 
     </script>
