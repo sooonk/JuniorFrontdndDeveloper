@@ -11,24 +11,7 @@
             background: url(https://www.themaincuprestaurant.com/wp-content/uploads/sites/483/2017/06/Brick-wall-background.jpg);
             background-size: cover;
             height: 100vh;
-        }
-        div {
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            background-image: url(https://cdn0.iconfinder.com/data/icons/trade-1-2/48/34-512.png);
-            background-size: cover;
-            cursor: none;
-            }
-
-        
-        span{
-            background-image: url(http://www.cprecisioncustomrifles.com/wp-content/uploads/2017/01/rifle-target-hole.png);
-            width: 30px;
-            height: 30px;
-            background-size: cover;
-            display: block;
-            position: absolute;
+            z-index: 10;
         }
         .tarcza {
             position: relative;
@@ -39,8 +22,30 @@
             align-content: center;
             top: 25%;
             left: 40%;
+            z-index: 50;
             
         }
+        span{
+            background-image: url(http://www.cprecisioncustomrifles.com/wp-content/uploads/2017/01/rifle-target-hole.png);
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            display: block;
+            position: absolute;
+            z-index: 75;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-image: url(https://cdn0.iconfinder.com/data/icons/trade-1-2/48/34-512.png);
+            background-size: cover;
+            cursor: none;
+            z-index: 100;
+            }
+        
+        
+        
     </style>
     
 </head>
