@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+    
+        let names = ['Arek', 'Darek', 'Czarek', 'Mariusz', 'Marek', 'Wiesław', 'Aneta', 'Stanisława'];
+        
+        let fullName = names.map(name => {
+            
+            if (name.slice(-1) === 'a') {
+                
+                return `${name} Kowalska`;                
+            }
+            return `${name} Kowalski`; 
+            
+        })
+        console.log(fullName);
+
+    
+        fullName.forEach(function(fullName){
+            
+            if(fullName.includes('rek')){
+                console.log(fullName);
+            }
+        
+    })
+
+    
+    
+    </script>
+ 
+</body>
+</html>

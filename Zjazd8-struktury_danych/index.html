@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <script>
+    
+    let array = ['Parker','Stark', 'Banner', 'Rogers', 'TChalla'];
+
+    console.log('Array length: ',array.length);
+    console.log('Array content: ',array);
+
+    array.pop();
+    console.log('Array content: ',array);
+
+    array.unshift('Romanoff', 'Odinson');
+    console.log('Array content: ',array);
+
+    array.push('Shield');
+    console.log('Array content: ',array);
+
+    array.shift();
+    console.log('Array content: ',array);
+    
+
+    array.forEach(function(hero, index){
+        console.log(hero, index)
+    })
+
+    let heroes = ['Batman', 'Robin', 'Superman'];
+    let modifiedHeroes = heroes.map(function(hero){
+        
+        return 'Hero - ' + hero;
+    })
+    console.log(modifiedHeroes);
+
+    </script>
+</body>
+</html>
