@@ -50,7 +50,7 @@ console.log(localStorage);
 localStorage.clear();
 */
 //Task - dodać obiekt, zamienić go na string, zapisać w localStorage, następnie pobrać i przywrócić do poprzedniej postaci
-const hero = {Hero: 'Batman', Power: 'money'};
+/*const hero = {Hero: 'Batman', Power: 'money'};
 console.log(hero);
 
 let heroStr = JSON.stringify(hero);
@@ -60,5 +60,22 @@ localStorage.setItem('Hero', heroStr);
 console.log(localStorage);
 
 console.log(JSON.parse(localStorage.getItem('Hero')));
+*/
+
+const arr = ['Kasia', 'Ania', 'Magda', 'Marek', 'Marta'];
+
+const res = arr.map(name => {
+    console.log(name);
+    return (name + 1)
+});
+      
+console.log('res', res);
 
 
+//Chaining method
+
+const resChain = arr
+    .filter(name => name.charAt(0) === 'M') //charAt + index - filtrowanie po pierwszej literze
+    .map(name => `${name} Kowalski`);
+
+console.log(resChain);
