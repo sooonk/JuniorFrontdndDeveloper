@@ -67,21 +67,29 @@ const heroes = [ciri, franciska, keira, philippa, tissaia, triss, yen, emhyr, da
 
 //Stan aplikacji powinien być zapisywany i przechowywany (dane)
 
-//Po wejściu do aplikacji powinniśmy od razu zobaczyć wybranych bohaterów
+console.log('ok');
+
 
 //Możliwość dodania bohatera
+//Podgląd bohatera powinien pokazywać jego zdjęcie, opis i moc
+
+
+//Po wejściu do aplikacji powinniśmy od razu zobaczyć wybranych bohaterów
 
 //Każdego bohatera można dodać tylko raz
 
 //Moc powinna być walidowana
 
-//Po dodaniu bohatera pojawia się jego zdjęcie i opis + moc
-
 //Po dodaniu bohatera pojawia się komunikat, że udało się go dodać. Jeśli nie, pojawia się
 //komunikat, że się nie udało
 
-//Możliwość usunięcia każdego z bohaterów
+//Możliwość ukrycia komunikatów przez użytkownika
 
+//Kiedy dodajemy bohatera, formularz powinien wrócić do stanu początkowego (domyślnego)
+
+//Możliwość usunięcia każdego z bohaterów
+//Kliknięcie na bohatera powinno pokazywać przycisk do usunięcia, po ponownym kliknięciu na
+//zdjęcie przycisk powinien się schować
 //Każda zmiana jest odzwierciedlana w stanie aplikacji (każde dodanie lub usunięcie zmienia
 //stan aplikacji)
 
