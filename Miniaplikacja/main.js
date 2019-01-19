@@ -80,12 +80,19 @@ const store = {
         this.heroes.forEach(hero => {
             localStorage.setItem(hero.name, JSON.stringify(hero));
         });
-
         console.warn('Store: local storage state is like: ', localStorage);
     },
 
-    synchFromLocalStorage: function(){
+    synchFromLocalStorage: function(knownHeroes){
+        knownHeroes.forEach(knownHero => {
+            const storedHero = localStorage.getItem(knownHero.name);
 
+            if((storedHero !== null) && (storedHero !== undefined)){
+                    this.heroes.push(storedHero);
+                } 
+        });
+
+        console.warn('Store: state of store after synch is like: ', this.heroes); 
     }, 
 
     doLogState: function(message, hero){
