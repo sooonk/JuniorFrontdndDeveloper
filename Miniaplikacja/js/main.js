@@ -64,3 +64,27 @@ const yen = {
 };
 
 const heroes = [ciri, franciska, keira, philippa, tissaia, triss, yen, emhyr, dandelion, vernon, vesemir, foltest, geralt];
+
+//Stan aplikacji powinien być zapisywany i przechowywany (dane)
+
+//Po wejściu do aplikacji powinniśmy od razu zobaczyć wybranych bohaterów
+
+//Możliwość dodania bohatera
+
+//Każdego bohatera można dodać tylko raz
+
+//Moc powinna być walidowana
+
+//Po dodaniu bohatera pojawia się jego zdjęcie i opis + moc
+
+//Po dodaniu bohatera pojawia się komunikat, że udało się go dodać. Jeśli nie, pojawia się
+//komunikat, że się nie udało
+
+//Możliwość usunięcia każdego z bohaterów
+
+//Każda zmiana jest odzwierciedlana w stanie aplikacji (każde dodanie lub usunięcie zmienia
+//stan aplikacji)
+
+
+
+
