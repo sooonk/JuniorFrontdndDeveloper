@@ -55,31 +55,45 @@ document.addEventListener("DOMContentLoaded", function(event) {  //Będzie się 
     console.log("Page is ready");
 });
 //Stan aplikacji powinien być zapisywany i przechowywany (dane)
-
 const store = {
     heroes: [],
-
     addHero: function(hero){
         this.heroes.push(hero);
-        console.warn('store: hero has been added: ' + hero);
-        console.warn('store: hero state of store is like: ' + this.heroes);
+
+        this.doLogState('Hero has been added: ', hero);
     },
+
     removeHero: function(hero){
         this.heroes = this.heroes
-        .filter(storedHero => storedHero.name !== this.hero.name);
-        console.warn('store: hero has been removed: ' + hero);
-        console.warn('store: hero state of store is like: ' + this.heroes);
+            .filter(storedHero => storedHero.name !== hero.name);
+
+        this.doLogState('Hero has been removed: ', hero);
     },
-    showHeroes: function(){
-        return this.heroes; //odwołuje się do zmiennej, która znajduje się w store, a nie poza nim
+
+    getHeroes: function(){
+        return this.heroes; //odwołuje się do zmiennej, która znajduje się w storze, a nie poza nim
     },
-    synchToLocalStorage: function(){},
-    synchFromLocalStorage: function(){} 
+
+    synchToLocalStorage: function(hero){
+        localStorage.clear();
+
+        this.heroes.forEach(hero => {
+            localStorage.setItem(hero.name, JSON.stringify(hero));
+        });
+
+        console.warn('Store: local storage state is like: ', localStorage);
+    },
+
+    synchFromLocalStorage: function(){
+
+    }, 
+
+    doLogState: function(message, hero){
+        console.warn('Store: '+ message, hero);
+        console.warn('Store: state of store is like: ', this.heroes); 
+    }
 };
-
-
 console.log('ok');
-
 
 //Możliwość dodania bohatera
 //Podgląd bohatera powinien pokazywać jego zdjęcie, opis i moc
