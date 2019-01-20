@@ -123,7 +123,8 @@ document.addEventListener("DOMContentLoaded", function(event) {  //Będzie się 
         return options;
     }
     function appendOptions(heroes){
-        document.querySelector('#heroesSelect').innerHTML = buildOptions(heroes);       
+        document.querySelector('#heroesSelect')
+            .innerHTML = buildOptions(heroes);       
     }  
     appendOptions(heroes);
     
