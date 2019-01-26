@@ -24,4 +24,14 @@ osoba.hello() // Zenek mówi cześć!
 hello() // Ala mówi cześć!
 
 
-funkcja BIND
+## funkcja BIND
+
+tworzy kopię, nową zmienną, która ma takie samo ciało i parametry, ale kontekst jest inny.
+Tworzy kopię, która jest przywiązana na stałe do nowego obiektu.
+
+Child zmienia stan parenta.
+
+## funkcja CALL
+
+umożliwia jednorazowe wywołanie funkcji w kontekscie innym niż domyślny
+
