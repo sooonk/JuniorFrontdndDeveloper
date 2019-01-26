@@ -35,3 +35,7 @@ Child zmienia stan parenta.
 
 umożliwia jednorazowe wywołanie funkcji w kontekscie innym niż domyślny
 
+
+
+
+
