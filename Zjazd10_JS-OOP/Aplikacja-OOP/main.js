@@ -36,27 +36,64 @@ ToDoApp.prototype.renderUI = function() {
 }
 
 ToDoApp.prototype.addTaskToDo = function() {
+    const newId = generateId(); 
     const inputValue = this.inputNode.value;
-    const newTask = new Task(inputValue);
+    const newTask = new Task(inputValue, newId);
     this.tasksToDo.push(newTask);
-    
-    const newListElement = this.createNewListElement(newTask.text)
+
+    const newListElement = this.createNewListElement(newTask.text, newId)
     this.listNode.appendChild(newListElement);
     this.inputNode.value = '';
 }
 
-ToDoApp.prototype.createNewListElement = function(text) {
+ToDoApp.prototype.removeTaskToDo = function(event) {
+    const referenceId = event.target.parentNode.dataset.id;
+    event.target.parentNode.remove();
+    const taskIndex = this.tasksToDo.findIndex(task => task.id == referenceId); 
+    this.tasksToDo.splice(taskIndex, 1);
+
+}
+
+ToDoApp.prototype.createNewListElement = function(text, newId) {
     const newListItem = document.createElement('li');
+    const removeIconElement = this.createRemoveIcon();
+    const checkboxElement = this.createCheckboxInput();
+    newListItem.dataset.id = newId;
     newListItem.innerText = text;
+    newListItem.appendChild(checkboxElement);
+    newListItem.appendChild(removeIconElement);
     return newListItem;
 }
 
-function Task(text) {
-    this.text = text;
+
+ToDoApp.prototype.createRemoveIcon = function() {
+    const removeIconElement = document.createElement('span');
+    removeIconElement.innerText = ' X';
+    removeIconElement.style.fontSize = '20px';  
+    removeIconElement.style.color = 'red';
+    removeIconElement.style.cursor = 'pointer';
+    removeIconElement.addEventListener('click', this.removeTaskToDo);
+    return removeIconElement;
 }
 
+ToDoApp.prototype.createCheckboxInput = function() {
+    const checkboxElement = document.createElement('input');
+    checkboxElement.type = 'checkbox';
+    checkboxElement.addEventListener('click', this.moveTaskToDone);
+    return checkboxElement;
+}
+
+function Task(text, id) {
+    this.text = text;
+    this.id = id;
+}
+
+function generateId() {
+    return new Date().getUTCMilliseconds();
+}
 const ToDoListApp = new ToDoApp();
 ToDoListApp.addTaskToDo = ToDoApp.prototype.addTaskToDo.bind(ToDoListApp)
+ToDoListApp.removeTaskToDo = ToDoApp.prototype.removeTaskToDo.bind(ToDoListApp)
 ToDoListApp.renderUI();
 
 
