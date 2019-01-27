@@ -1,13 +1,18 @@
-let str1 = new String("Zbhusinsbus hsbsht hska");
-let str2 = new String("Ziutka");
+const filterName = (name, index) => {
+    let length = name.length;
+    let newName1 = name.slice(0, index)
+    let newName2 = name.slice(index+1, length);
+    return newName1 + newName2;
+};
 
+console.log(filterName('Sonia', 3));
 
+//Second version
 
-if (str2 === str3) {
-    
-  
-    let str4 = str2.slice(3,5) + str2.slice(15,17) + str2.slice(19,21);     
-    console.log(`I am ${str4}`);
-    console.log('I am ' + str4);       
-}
+const filter = (name1, index1) => {
+    const nameArray = name1.split('');
+    nameArray.splice(index1, 1);
+    return nameArray.join('');
 
+};
+console.log(filter('Sonia', 3));
