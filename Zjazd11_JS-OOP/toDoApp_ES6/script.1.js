@@ -18,6 +18,11 @@ class ToDoApp {
             button.innerText = 'add task';
             return button;
         })() // - tworzymy tutaj nasz znacznik <button> który będziemy trzymać w tym polu w celu optymalizacji i łatwego dostępu
+
+        this.addTaskToDo = this.addTaskToDo.bind(this);
+        this.moveTaskToDone = this.moveTaskToDone.bind(this);
+        this.removeTaskToDo = this.removeTaskToDo.bind(this);
+
     };
     renderUI() {
         const appContainer = document.querySelector('#toDoAppContainer'); // pobieramy nasz div z htmla po ID w celu wstawienia w niego naszego UI
@@ -89,6 +94,8 @@ class ToDoApp {
         checkboxElement.addEventListener('click', this.moveTaskToDone); // dodajemy słuchacza zdarzeń na kliknięcie checkbox-a
         return checkboxElement;
     }
+
+
 }
 
 class Task {
@@ -103,9 +110,7 @@ function generateID() {
 }
 
 const ToDoListApp = new ToDoApp(); // tworzymy obiekt
-ToDoListApp.addTaskToDo = ToDoApp.prototype.addTaskToDo.bind(ToDoListApp) // przypisujemy na stałe kontekst wywołania metody do obiektu naszej aplikacji
-ToDoListApp.moveTaskToDone = ToDoApp.prototype.moveTaskToDone.bind(ToDoListApp) // przypisujemy na stałe kontekst wywołania metody do obiektu naszej aplikacji
-ToDoListApp.removeTaskToDo = ToDoApp.prototype.removeTaskToDo.bind(ToDoListApp) // przypisujemy na stałe kontekst wywołania metody do obiektu naszej aplikacji
+
 ToDoListApp.renderUI(); // renderujemy UI
 
 
