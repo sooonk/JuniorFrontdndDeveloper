@@ -1,0 +1,16 @@
+{
+  "name": "zjazd12-nodejs",
+  "version": "1.0.0",
+  "description": "nmp ",
+  "main": "example-node.js",
+  "scripts": {
+    "test": "test",
+    "serve": "node serve.js"
+  },
+  "author": "Sonia",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "^3.3.1"
+  }
+}
